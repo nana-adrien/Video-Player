@@ -20,9 +20,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             VideoPlayerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    MediaPickerScreen(
+                        modifier = Modifier.fillMaxSize().padding(innerPadding)
                     )
                 }
             }
